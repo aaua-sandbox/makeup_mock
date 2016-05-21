@@ -11,6 +11,7 @@ page '/*.txt', layout: false
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
+page "/admin/*", :layout => "admin"
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
@@ -33,6 +34,11 @@ end
 #     "Helping"
 #   end
 # end
+helpers do
+  def some_helper
+    "Helping"
+  end
+end
 
 # Build-specific configuration
 configure :build do
