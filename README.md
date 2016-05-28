@@ -3,7 +3,8 @@
 
 # 起動
 ```
-middleman
+$ bundle install --path=vendor/bundle
+$ middleman
 ```
 
 Access To [http://localhost:4567/](http://localhost:4567/)
