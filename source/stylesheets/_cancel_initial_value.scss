@@ -1,0 +1,41 @@
+// ======================================
+// normalize.cssを当てた後の初期値の打ち消し
+// ======================================
+
+// 属性別
+// -- word-wrap, word-break
+html {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+// -- outline, highlight
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// -- margin
+ul, p {
+  margin: 0;
+}
+
+// -- appearance
+a, input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+// タグ別
+// -- ul
+ul {
+  padding: 0;
+}
+
+// -- li
+li {
+  list-style: none;
+}

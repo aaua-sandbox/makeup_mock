@@ -1,0 +1,21 @@
+// 改行させる
+@mixin wrap {
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+// 改行させない
+@mixin nowrap {
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+// 文章を省略表示
+@mixin line-ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}

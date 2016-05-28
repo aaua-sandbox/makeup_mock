@@ -1,0 +1,34 @@
+---
+title: 原稿
+---
+
+<article class="article">
+  <header class="main-header">
+    <input class="main-header__search-box" type="text" />
+  </header>
+  <section class="article-main">
+    <ul class="article-list">
+      <% 10.times.each do %>
+        <li class="article-row">
+          <section class="article-item">
+            <ul class="article-item__list">
+              <li class="article-item__row article-item__row--info">
+                <p class="article-item__status">下書き</p>
+                <p class="article-item__name"><%= lorem.name %></p>
+                <p class="article-item__date"><%= lorem.date "%m月%d日" %></p>
+              </li>
+              <li class="article-item__row article-item__row--title">
+                <p class="article-item__title"><%= lorem.sentence %></p>
+              </li>
+            </ul>
+          </section>
+        </li>
+      <% end %>
+    </ul>
+    <ul class="main-pager">
+      <% 10.times.each do |i| %>
+        <li class="main-pager__link"><a href=""><%= i + 1 %></a></li>
+      <% end %>
+    </ul>
+  </section>
+</article>

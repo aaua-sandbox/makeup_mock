@@ -1,0 +1,40 @@
+---
+title: Welcome to Middlemaaaaaaaaaan
+---
+
+<div class="welcome">
+  <div class="logo">
+    <%= image_tag "middleman-logo.svg" %>
+  </div>
+  <h1>Middleman is Running</h1>
+  <p><%= data.common.title %>
+  <ul>
+    <% data.common.friends.each do |f| %>
+      <li><%= f %></li>
+    <% end %>
+  </ul>
+  <li><%= link_to 'About', '/about.html', :relative => true %></li>
+  <li><%= lorem.sentences 5 %></li>
+  <li><%= lorem.sentence %><!-- # 1 文を返す --></li>
+  <li><%= lorem.words 5 %><!-- # 5 つの単語を返す --></li>
+  <li><%= lorem.word %></li>
+  <li><%= lorem.paragraphs 10 %><!-- # 10 段落を返す --></li>
+  <li><%= lorem.paragraph %></li>
+  <li><%= lorem.date %><!-- # strftime 形式の引数を受取る --></li>
+  <li><%= lorem.name %></li>
+  <li><%= lorem.first_name %></li>
+  <li><%= lorem.last_name %></li>
+  <li><%= lorem.email %></li>
+  <li><img src="<%= lorem.image('300x400') %>" /></li>
+  <li><img src="<%= lorem.image('300x400', :background_color => '333', :color => 'fff') %>" /></li>
+  <li><img src="<%= lorem.image('300x400', :random_color => true) %>" /></li>
+  <li><img src="<%= lorem.image('300x400', :text => 'blah') %>" /></li>
+  <li><%= some_method %></li>
+  <li><%= some_helper %></li>
+
+  <li><a href="admin">admin page</a></li>
+
+  <p class="doc">
+    <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
+  </p><!-- .doc -->
+</div><!-- .welcome -->

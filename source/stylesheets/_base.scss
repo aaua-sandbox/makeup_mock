@@ -1,0 +1,22 @@
+html {
+  color: $font-color;
+  background-color: $background-color;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+a {
+  color: $font-color;
+  text-decoration: none;
+}
+
+input[type=text],
+input[type=password]
+{
+  border: solid 1px $border-color;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: bottom;
+}

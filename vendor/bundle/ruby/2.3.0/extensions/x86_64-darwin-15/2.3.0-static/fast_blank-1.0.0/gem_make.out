@@ -1,0 +1,15 @@
+current directory: /Users/admin/Documents/workspace_middleman/makeup_mock/vendor/bundle/ruby/2.3.0/gems/fast_blank-1.0.0/ext/fast_blank
+/Users/admin/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20160528-17157-lo84b2.rb extconf.rb
+creating Makefile
+
+current directory: /Users/admin/Documents/workspace_middleman/makeup_mock/vendor/bundle/ruby/2.3.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" clean
+
+current directory: /Users/admin/Documents/workspace_middleman/makeup_mock/vendor/bundle/ruby/2.3.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR="
+compiling fast_blank.c
+linking shared-object fast_blank.bundle
+
+current directory: /Users/admin/Documents/workspace_middleman/makeup_mock/vendor/bundle/ruby/2.3.0/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fast_blank.bundle ./.gem.20160528-17157-y9gn32
