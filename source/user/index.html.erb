@@ -11,16 +11,18 @@ title: 原稿
       <% 10.times.each do %>
         <li class="article-row">
           <section class="article-item">
-            <ul class="article-item__list">
-              <li class="article-item__row article-item__row--info">
-                <p class="article-item__status">下書き</p>
-                <p class="article-item__name"><%= lorem.name %></p>
-                <p class="article-item__date"><%= lorem.date "%m月%d日" %></p>
-              </li>
-              <li class="article-item__row article-item__row--title">
-                <p class="article-item__title"><%= lorem.sentence %></p>
-              </li>
-            </ul>
+            <a class="article-item__link" href="">
+              <ul class="article-item__list">
+                <li class="article-item__row article-item__row--info">
+                  <p class="article-item__status">下書き</p>
+                  <p class="article-item__name"><%= lorem.name %></p>
+                  <p class="article-item__date"><%= lorem.date "%m月%d日" %></p>
+                </li>
+                <li class="article-item__row article-item__row--title">
+                  <p class="article-item__title"><%= lorem.sentence %></p>
+                </li>
+              </ul>
+            </a>
           </section>
         </li>
       <% end %>

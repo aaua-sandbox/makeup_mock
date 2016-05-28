@@ -1,5 +1,41 @@
 .menu {
-  width: 200px;
-  min-width: 200px;
-  max-width: 200px;
+  width: 180px;
+  min-width: 180px;
+  max-width: 180px;
+
+  .menu__list {
+    .menu-row {
+      padding: 0 $margin-size;
+    }
+    .menu-row__user {
+      position: relative;
+      padding-top: $margin-size;
+      padding-bottom: 40px;
+    }
+    .menu-row__link {
+      padding-top: 40px;
+    }
+  }
+
+  .menu__user-name {
+    @include line-ellipsis;
+    color: white;
+  }
+  .menu__user-image {
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    img {
+      border-radius: 100%;
+    }
+  }
+
+  .menu-link__list {
+    .menu-link__row {}
+    .menu-link__row--btn {}
+  }
 }
