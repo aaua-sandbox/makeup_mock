@@ -19,3 +19,11 @@
   white-space: nowrap;
   word-wrap: normal;
 }
+
+// hover
+@mixin a-hover {
+  &:hover {
+    opacity: .8;
+    background-color: #f0f0f0;
+  }
+}

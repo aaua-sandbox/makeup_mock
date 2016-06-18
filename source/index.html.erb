@@ -1,40 +1,28 @@
----
-title: Welcome to Middlemaaaaaaaaaan
----
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
-<div class="welcome">
-  <div class="logo">
-    <%= image_tag "middleman-logo.svg" %>
-  </div>
-  <h1>Middleman is Running</h1>
-  <p><%= data.common.title %>
-  <ul>
-    <% data.common.friends.each do |f| %>
-      <li><%= f %></li>
-    <% end %>
-  </ul>
-  <li><%= link_to 'About', '/about.html', :relative => true %></li>
-  <li><%= lorem.sentences 5 %></li>
-  <li><%= lorem.sentence %><!-- # 1 文を返す --></li>
-  <li><%= lorem.words 5 %><!-- # 5 つの単語を返す --></li>
-  <li><%= lorem.word %></li>
-  <li><%= lorem.paragraphs 10 %><!-- # 10 段落を返す --></li>
-  <li><%= lorem.paragraph %></li>
-  <li><%= lorem.date %><!-- # strftime 形式の引数を受取る --></li>
-  <li><%= lorem.name %></li>
-  <li><%= lorem.first_name %></li>
-  <li><%= lorem.last_name %></li>
-  <li><%= lorem.email %></li>
-  <li><img src="<%= lorem.image('300x400') %>" /></li>
-  <li><img src="<%= lorem.image('300x400', :background_color => '333', :color => 'fff') %>" /></li>
-  <li><img src="<%= lorem.image('300x400', :random_color => true) %>" /></li>
-  <li><img src="<%= lorem.image('300x400', :text => 'blah') %>" /></li>
-  <li><%= some_method %></li>
-  <li><%= some_helper %></li>
+    <title>MAKE UP</title>
 
-  <li><a href="admin">admin page</a></li>
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+  </head>
 
-  <p class="doc">
-    <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  <body class="index">
+    <section class="index-main">
+      <h1 class="index-logo">MAKE UP</h1>
+      <form class="index-login">
+        <div class="index-login__item index-login__item--input">
+          <input type="text" placeholder="Email">
+          <input type="password" placeholder="Password">
+        </div>
+        <div class="index-login__item index-login__item--submit">
+          <input type="submit" value="ログイン">
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

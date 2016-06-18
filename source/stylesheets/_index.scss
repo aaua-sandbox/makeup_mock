@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Anders';
+  src: url(/vendor/Anders.ttf);
+}
+
+@font-face {
+  font-family: 'TESLA';
+  src: url(/vendor/TESLA.ttf);
+}
+
+.index {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .index-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .index-logo {
+    font-family: Anders;
+    font-weight: bold;
+    color: $main-color;
+    font-size: 60px;
+  }
+
+  .index-login {
+    display: table;
+    margin: 0 20px;
+
+    > * {
+      display: table-cell;
+    }
+
+    .index-login__item {
+    }
+
+    .index-login__item--input {
+      width: 200px;
+      padding-right: 5px;
+
+      > * {
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .index-login__item--submit {
+      > * {
+        height: 100%;
+        padding: 0;
+      }
+    }
+  }
+}

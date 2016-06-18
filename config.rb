@@ -11,8 +11,9 @@ page '/*.txt', layout: false
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
-page "/admin/*", :layout => "admin"
-page "/user/*", :layout => "layout"
+page '/', layout: false
+page '/admin/*', layout: 'admin'
+page '/user/*', layout: 'layout'
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
