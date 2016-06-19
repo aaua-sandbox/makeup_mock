@@ -29,6 +29,8 @@
     font-weight: bold;
     color: $main-color;
     font-size: 60px;
+    line-height: 60px;
+    margin: 20px;
   }
 
   .index-login {
@@ -46,8 +48,9 @@
       width: 200px;
       padding-right: 5px;
 
-      > * {
+      > input {
         width: 100%;
+        border-color: $font-color_info;
 
         &:not(:last-child) {
           margin-bottom: 5px;
@@ -56,9 +59,17 @@
     }
 
     .index-login__item--submit {
-      > * {
-        height: 100%;
-        padding: 0;
+      vertical-align: bottom;
+
+      > input {
+        padding: 0 5px;
+        background-color: $main-color;
+        color: white;
+        font-weight: bold;
+        border: double 4px white;
+        box-sizing: border-box;
+        height: 63px;
+        margin-top: -1px;
       }
     }
   }

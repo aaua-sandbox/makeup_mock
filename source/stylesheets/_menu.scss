@@ -9,7 +9,7 @@
     position: fixed;
     width: 180px;
     height: 100%;
-    box-shadow: $font-color_info 1px 1px 1px;
+    box-shadow: $font-color_info 1px 0 1px;
   }
 
   .menu-handle {
@@ -23,6 +23,25 @@
     border: solid 1px $font-color_info;
     border-radius: 3px;
     box-shadow: $font-color_info 1px 1px 1px;
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      top: 8px;
+      border: none 1px $font-color_info;
+      border-left-style: solid;
+      border-bottom-style: solid;
+      transform: rotate(45deg);
+    }
+    &:before {
+      left: 6px;
+    }
+    &:after {
+      left: 13px;
+    }
   }
 
   .menu__list {
@@ -32,7 +51,7 @@
     .menu-row__user {
       position: relative;
       padding-top: $margin-size;
-      padding-bottom: 40px;
+      padding-bottom: 50px;
     }
     .menu-row__link {
       padding-top: 40px;
@@ -65,6 +84,10 @@
     }
     .menu-link__item--link {
       @include a-hover;
+
+      &.active {
+        font-weight: bold;
+      }
     }
     .menu-link__item--btn {
       background-color: $accent-color;

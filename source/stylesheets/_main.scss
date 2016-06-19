@@ -1,0 +1,29 @@
+.main {
+  .main-header {
+    padding: 7px $margin-size;
+
+    .main-header__search-box {
+      width: 100%;
+      border-style: none;
+      border-bottom: solid 2px $main-color;
+    }
+  }
+
+  .main-pager {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    .main-pager__link {
+      > a {
+        margin: 0 2px;
+        padding: 5px 10px;
+        @include a-hover;
+
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

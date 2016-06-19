@@ -1,2 +1,53 @@
 .article {
+  .article-main {
+    padding: $margin-size;
+  }
+
+  .article-list {
+    .article-row {
+      margin-bottom: $margin-size;
+
+      .article-item {
+        .article-item__link {
+          display: block;
+          padding: ($margin-size / 2) $margin-size;
+          border: solid 1px $border-color;
+          @include a-hover;
+        }
+        .article-item__list {
+
+        }
+        .article-item__row {
+
+        }
+        .article-item__row--info {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          > * {
+            @include nowrap;
+            overflow: hidden;
+            font-size: $font-size-s;
+          }
+        }
+        .article-item__row--title {
+
+        }
+        .article-item__status {
+          display: inline-block;
+          width: 50px;
+        }
+        .article-item__name {
+
+        }
+        .article-item__date {
+
+        }
+        .article-item__title {
+          font-size: $font-size-l;
+        }
+      }
+    }
+  }
 }
