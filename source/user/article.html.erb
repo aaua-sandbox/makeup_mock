@@ -1,0 +1,30 @@
+---
+title: 記事
+---
+
+<article class="article-show">
+  <header class="main-header">
+    <button type="button"><a href="/user">←</a></button>
+    <button type="button">段落</button>
+    <button type="button">リンク</button>
+    <button type="button">取消線</button>
+    <button type="button">コメント</button>
+    <button type="button">閲覧</button>
+    <button type="button">保存</button>
+    <button type="button">その他</button>
+  </header>
+  <section class="article-main">
+    <article class="article-sheet">
+      <p class="article-sheet__info">
+        <span class="article-sheet__status">下書き</span>
+        <span class="article-sheet__date"><%= lorem.date "%m月%d日" %></span>
+      </p>
+      <h1 class="article-sheet__title"><%= lorem.sentence %></h1>
+      <p class="article-sheet__name"><%= lorem.name %></p>
+      <% 4.times.each do %>
+        <h2><%= lorem.sentence %></h2>
+        <p><%= lorem.paragraphs 2 %></p>
+      <% end %>
+    </article>
+  </section>
+</article>

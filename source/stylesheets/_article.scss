@@ -1,4 +1,4 @@
-.article {
+.article-index {
   .article-main {
     padding: $margin-size;
   }
@@ -48,6 +48,33 @@
           font-size: $font-size-l;
         }
       }
+    }
+  }
+}
+
+.article-show {
+  .article-main {
+    padding: $margin-size;
+  }
+  .article-sheet {
+    min-height: (3508px / 3);
+    width: (2480px / 3);
+    margin: 0 auto;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    border: solid 1px $border-color;
+
+    .article-sheet__info {
+      text-align: right;
+    }
+    .article-sheet__status {
+    }
+    .article-sheet__date {
+    }
+    .article-sheet__title {
+    }
+    .article-sheet__name {
+      text-align: right;
     }
   }
 }
