@@ -1,7 +1,8 @@
 <section class="menu">
   <div class="menu-fixed">
     <ul class="menu__list">
-      <li class="menu-row menu-row__user" style="background: url(<%= lorem.image('300x400', :random_color => true) %>);">
+      <li class="menu-row menu-row__user">
+        <span class="menu__bg-image" style="background-image: url(<%= image_path "summer.jpg" %>);"></span>
         <p class="menu__user-name"><%= lorem.name %></p>
         <span class="menu__user-image"><img src="<%= lorem.image('50x50', :text => 'Face') %>" /></span>
       </li>
