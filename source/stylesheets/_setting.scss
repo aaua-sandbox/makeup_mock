@@ -1,3 +1,6 @@
+// フォントファミリー
+$font-family-base: Ryumin Medium KL,"リュウミン M-KL",HiraMinProN-W3,HiraMinPro-W3,"ヒラギノ明朝 ProN W3","ヒラギノ明朝 Pro W3","ＭＳ 明朝",serif;
+
 // フォントサイズ
 $font-size-base: 15px;
 $font-size-l: 1.2rem;
@@ -10,6 +13,7 @@ $line-height-base: 1.5rem;
 // 色
 // -- 基本色
 $background-color: rgb(255, 255, 255);
+$background-color-main: rgb(240, 240, 240);
 $main-color: rgb(253, 105, 133);
 $sub-color: rgb(253, 105, 133);
 $accent-color: rgb(239, 27, 73);

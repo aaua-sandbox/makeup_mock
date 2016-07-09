@@ -31,10 +31,10 @@ title: 原稿
         </li>
       <% end %>
     </ul>
-    <ul class="main-pager">
-      <% 10.times.each do |i| %>
-        <li class="main-pager__link"><a class="<%= 'active' if i == 0 %>" href=""><%= i + 1 %></a></li>
-      <% end %>
-    </ul>
   </section>
+  <ul class="main-pager">
+    <% 10.times.each do |i| %>
+      <li class="main-pager__link"><a class="<%= 'active' if i == 0 %>" href=""><%= i + 1 %></a></li>
+    <% end %>
+  </ul>
 </article>

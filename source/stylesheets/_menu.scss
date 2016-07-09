@@ -27,10 +27,10 @@
     &:before, &:after {
       content: '';
       display: block;
-      width: 13px;
-      height: 13px;
+      width: 10px;
+      height: 10px;
       position: absolute;
-      top: 8px;
+      top: 10px;
       border: none 1px $font-color_info;
       border-left-style: solid;
       border-bottom-style: solid;

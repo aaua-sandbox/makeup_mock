@@ -3,6 +3,7 @@ html {
   background-color: $background-color;
   font-size: $font-size-base;
   line-height: $line-height-base;
+//  font-family: $font-family-base;
 }
 
 a {
@@ -19,4 +20,8 @@ input[type=password]
 
 img {
   vertical-align: bottom;
+}
+
+h1 {
+  line-height: 1.2em;
 }

@@ -1,4 +1,6 @@
 .article-index {
+  padding-bottom: $margin-size;
+
   .article-main {
     padding: $margin-size;
   }
@@ -6,6 +8,10 @@
   .article-list {
     .article-row {
       margin-bottom: $margin-size;
+
+      &:nth-last-of-type(1) {
+        margin-bottom: 0;
+      }
 
       .article-item {
         .article-item__link {
@@ -55,6 +61,7 @@
 .article-show {
   .article-main {
     padding: $margin-size;
+    background-color: $background-color-main;
   }
   .article-sheet {
     min-height: (3508px / 3);
@@ -63,6 +70,8 @@
     padding: 15px 30px;
     box-sizing: border-box;
     border: solid 1px $border-color;
+    font-family: $font-family-base;
+    background-color: $background-color;
 
     .article-sheet__info {
       text-align: right;

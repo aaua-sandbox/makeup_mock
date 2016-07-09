@@ -3,15 +3,20 @@ title: 記事
 ---
 
 <article class="article-show">
-  <header class="main-header">
-    <button type="button"><a href="/user">←</a></button>
-    <button type="button">段落</button>
-    <button type="button">リンク</button>
-    <button type="button">取消線</button>
-    <button type="button">コメント</button>
-    <button type="button">閲覧</button>
-    <button type="button">保存</button>
-    <button type="button">その他</button>
+  <header class="main-header main-header--split">
+    <span>
+      <button type="button" class="main-header__button"><a href="/user">←</a></button>
+      <button type="button" class="main-header__button"><span>段落</span></button>
+      <button type="button" class="main-header__button"><span>リンク</span></button>
+      <button type="button" class="main-header__button"><span>埋め込み</span></button>
+      <button type="button" class="main-header__button"><span>取消線</span></button>
+    </span>
+    <span>
+      <button type="button" class="main-header__button"><span>コメント</span></button>
+      <button type="button" class="main-header__button"><span>閲覧</span></button>
+      <button type="button" class="main-header__button"><span>保存</span></button>
+      <button type="button" class="main-header__button"><span>その他</span></button>
+    </span>
   </header>
   <section class="article-main">
     <article class="article-sheet">

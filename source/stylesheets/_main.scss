@@ -1,18 +1,44 @@
 .main {
   .main-header {
     padding: 7px $margin-size;
+    border-bottom: solid 1px $border-color;
 
     .main-header__search-box {
       width: 100%;
       border-style: none;
       border-bottom: solid 2px $main-color;
     }
+
+    .main-header__button {
+      padding: 0;
+      margin: 0;
+      border-style: none;
+      background-color: initial;
+
+      > * {
+        display: block;
+        border: solid 1px $border-color;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        width: 75px;
+      }
+    }
+  }
+
+  .main-header--split {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .main-pager {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    background-color: $background-color;
+    padding: $margin-size 0;
 
     .main-pager__link {
       > a {
@@ -22,6 +48,7 @@
 
         &.active {
           font-weight: bold;
+          color: $main-color;
         }
       }
     }
